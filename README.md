@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Email Template Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully customizable and user-friendly email template editor where you can preview, edit, and save stunning email designs effortlessly.
 
-## Available Scripts
+live preview(https://email-template-editor-seven.vercel.app/)
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+Follow these steps to clone and run the project locally:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Clone the Repository
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+git clone https://github.com/kazutokidigaya/email-template-edit.git
+```
 
-### `npm test`
+### Backend Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Craete a .env file in backend folders root directory and paste your Creditianls from mongoDb and Cloudinary in it.
 
-### `npm run build`
+```bash
+MONGO_URI="---Your MongoDB Connection String---"
+CLOUDINARY_CLOUD_NAME="---Cloudinary Cloud Name---"
+CLOUDINARY_API_KEY="---Cloudinary Cloud API_KEY---"
+CLOUDINARY_API_SECRET="---Cloudinary Cloud API_SECRET---"
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+open your terminal and follow the commands below:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd email-template-edit/backend
+npm install
+npm run start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend Setup
 
-### `npm run eject`
+open a new terminal and follow the comands below
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd email-template-edit/template-frontend
+npm install
+npm run start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Template Selection: Choose from a variety of preloaded professional email templates.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Live Preview: Preview how your email will look before making changes or sending it.
 
-## Learn More
+Drag-and-Drop Editor: Use the GrapesJS-powered editor to easily rearrange sections, add text, images, and components.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Responsive Design: Test your email's responsiveness for mobile, desktop, and other devices right in the editor.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Custom Styling: Change colors, backgrounds, and fonts to fit your branding needs.
 
-### Code Splitting
+Save & Download: Save your customized template or download it as an HTML file for immediate use.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Send Emails: Send your designed template directly via email using the integrated backend.
